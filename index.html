@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktlista</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Special+Elite&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div id="container">
+        <header>
+        <button id="change-theme-btn">Ändra tema</button>
+         <!--Construction box-->
+        </header>
+        <section id="heading-box"><h1>Din kontaktlista</h1></section>
+        <aside>
+            
+            <section id="first-section">
+        
+                <h2>Skapa ny kontakt</h2>
+                <input type="text" placeholder="Namn" id="add-name">
+                <input type="tel" placeholder="Telefonnummer" id="add-number">
+            
+                <button id="save-btn">Spara</button>
+    
+                <button id="delete-all-btn">Radera alla kontakter</button>
+                <!--Error text one-->
+            </section>
+
+        </aside>
+        <main>
+            <section id="second-section">
+        
+                <h2>Kontaktlista</h2>
+                <div class="contact-list">
+                    <ul class="contacts">
+                        <!--List items here-->
+                        <!--Error text two-->
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>Copyright &#169; 2023<br>
+            Matilda Dahlqvist Dalhov<br>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

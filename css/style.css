@@ -1,0 +1,146 @@
+@import url('variables.css');
+
+body {
+    background-color: var(--main-color);
+}
+
+#container {
+    display: grid;
+    margin: 0 auto;
+    width: 90%;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 2%;
+    row-gap: 20px;
+}
+
+header {
+    grid-column: 1 / span 5;
+    font-family: var(--second-font-family);
+}
+
+#change-theme-btn {
+    float: right;
+    padding: 10px;
+    background-color: #333;
+    color: var(--second-accent-color)
+}
+
+.construction-box {
+    width: 400px;
+    height: 330px;
+    background-color: var(--varning-text);
+    border-radius: var(--default-border-radius);
+    box-shadow: 0 0 3px 3px var(--third-accent-color);
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: var(--second-font-family);
+    padding-top: 20px;
+    background-image: url(../img/under-construction-2408061_1280.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+ 
+#heading-box {
+    grid-column: 1 / span 5;
+    box-shadow: 0 0 3px 3px var(--second-color);
+    border-radius: var(--default-border-radius);
+    font-family: var(--first-font-family);
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--first-accent-color);
+    background-image: url(../img/bats-2027875_1280.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+aside {
+    grid-column: 1/ span 2;
+    box-shadow: 0 0 3px 3px var(--third-accent-color);
+    border-radius: var(--default-border-radius);
+    background-color: var(--second-color);
+    background-image: url(../img/spider-311050_1280.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#first-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    padding-bottom: 30px;
+}
+
+#first-section button {
+    padding: 6px;
+}
+
+#save-btn, .change-btn {
+    background-color: var(--second-accent-color);
+}
+
+#delete-all-btn, .delete-btn {
+    background-color: var(--first-accent-color);
+}
+
+.first-error img, .second-error img {
+    max-width: 60px;
+}
+
+main {
+    background-color: var(--second-color);
+    grid-column: 3 / span 3;
+    box-shadow: 0 0 3px 3px var(--third-accent-color);
+    border-radius: var(--default-border-radius);
+    background-image: url(../img/bats-42379_1280.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul {
+    list-style-type: '👻';
+}
+
+input {
+    padding: 3px;
+}
+
+h2 {
+    font-family: var(--first-font-family);
+    font-size: 2.5rem;
+    color: var(--header-text-color);
+    text-align: center;
+}
+
+input, button, li {
+    font-family: var(--second-font-family);;
+}
+
+#second-section button {
+    margin-left: 10px;
+    padding: 3px 12px 3px 12px;
+  }
+
+.first-error, .second-error {
+    font-family: var(--first-font-family);
+    font-size: 2rem;
+    color: var(--varning-text);
+    text-align: center;
+}
+
+footer {
+    background-color: var(--third-color);
+    grid-column: 1 / span 5;
+    font-family: var(--second-font-family);
+    box-shadow: 0 0 3px 3px var(--third-color);
+    border-radius: var(--default-border-radius);
+    padding: 10px;
+    text-align: center;
+}

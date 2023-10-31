@@ -1,0 +1,15 @@
+/* CSS Variables */
+
+:root {
+    --main-color: rgb(39, 38, 38);
+    --second-color:#512888;
+    --third-color: grey;
+    --first-accent-color: #880808;
+    --second-accent-color: #54C571;
+    --third-accent-color: black;
+    --header-text-color: #F0C420;
+    --varning-text: #FF7518;
+    --default-border-radius: 9px;
+    --first-font-family: Creepster;
+    --second-font-family: Special Elite;
+}
