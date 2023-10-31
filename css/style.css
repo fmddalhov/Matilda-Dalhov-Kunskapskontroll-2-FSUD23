@@ -46,18 +46,40 @@ header {
     background-repeat: no-repeat;
     background-position: center bottom;
 }
- 
-#heading-box {
-    grid-column: 1 / span 5;
+
+video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .video-wrapper {
+    position: absolute;
     box-shadow: 0 0 3px 3px var(--second-color);
     border-radius: var(--default-border-radius);
+    width: 90%;
+    height: 250px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+#heading-box {
+    grid-column: 1 / span 5;
+    padding-bottom: 10px;
     font-family: var(--first-font-family);
     text-align: center;
     font-size: 3.5rem;
     color: var(--first-accent-color);
-    background-image: url(../img/bats-2027875_1280.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+
+h1 {
+    position: relative;
 }
 
 aside {
@@ -179,9 +201,18 @@ footer {
             font-family: var(--second-font-family);
         }
         
+        .video-wrapper {
+            display: none;
+        }
+
         #heading-box {
             grid-column: 1 / span 5;
+            box-shadow: 0 0 3px 3px var(--second-color);
+            border-radius: var(--default-border-radius);
             font-size: 1.5rem;
+            background-image: url(../img/bats-2027875_1280.png);
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         aside {
