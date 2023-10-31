@@ -144,3 +144,32 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+/* Tablet */
+@media (max-width: 1023px) {
+    /*Måste fixa så att knapparna hamnar under kontakten*/
+    .contact-list ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: no-wrap;
+        padding-bottom: 6px;
+      }
+    
+      .contact-list li {
+        flex: 1;
+        margin: 0 6px 6px 0;
+      }
+    
+      input {
+        margin-bottom: 6px;
+      }
+    }
+    
+    /* Phone */
+    @media (max-width: 767px) {
+    /* Ta bort bilden bakom överskriften, minska ner överskriften.
+    Skapa ny kontakt i en ruta ovanför kontaktlistan.
+    Lägga till videon som bakgrund*/
+    }
+    
+    
