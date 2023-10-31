@@ -123,7 +123,7 @@ function displaySecondError() {
     let secondErrorMessage = document.createElement('div');
     secondErrorMessage.className = "second-error";
     secondErrorMessage.innerHTML = `
-    <b>Du kan inte spara tomma ändringar i din kontakt!</b>			
+    <b>Du kan inte spara tomma ändringar!</b>			
     `;
     const ghostImg = document.createElement('img');
     ghostImg.src = 'img/ghosts-1775548_1280.png';

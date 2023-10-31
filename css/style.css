@@ -26,7 +26,8 @@ header {
 }
 
 .construction-box {
-    width: 400px;
+    max-width: 400px;
+    min-width: 300px;
     height: 330px;
     background-color: var(--varning-text);
     border-radius: var(--default-border-radius);
@@ -147,17 +148,15 @@ footer {
 
 /* Tablet */
 @media (max-width: 1023px) {
-    /*Måste fixa så att knapparna hamnar under kontakten*/
     .contact-list ul {
         display: flex;
         flex-direction: column;
         flex-wrap: no-wrap;
-        padding-bottom: 6px;
       }
     
       .contact-list li {
         flex: 1;
-        margin: 0 6px 6px 0;
+        padding-bottom: 6px;
       }
     
       input {
@@ -167,9 +166,39 @@ footer {
     
     /* Phone */
     @media (max-width: 767px) {
-    /* Ta bort bilden bakom överskriften, minska ner överskriften.
-    Skapa ny kontakt i en ruta ovanför kontaktlistan.
-    Lägga till videon som bakgrund*/
+        #container {
+            display: grid;
+            margin: 0 auto;
+            width: 100%;
+            grid-template-columns: repeat(5, 1fr);
+            row-gap: 12px;
+        }
+        
+        header {
+            grid-column: 1 / span 5;
+            font-family: var(--second-font-family);
+        }
+        
+        #heading-box {
+            grid-column: 1 / span 5;
+            font-size: 1.5rem;
+        }
+
+        aside {
+            grid-column: 1/ span 5;
+        }
+
+        #first-section {
+            padding-bottom: 12px;
+        }
+        
+        main {
+            grid-column: 1 / span 5;
+        }
+        
+        h2, .first-error, .second-error {
+            font-size: 1.5rem;
+        }
     }
     
     
